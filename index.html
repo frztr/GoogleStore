@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      window.addEventListener('scroll',function()
+      {
+          check_elements();
+      });
+
+      function check_elements()
+      {
+          var elems = document.body.children;
+          for(let i=0;i<elems.length;i++)
+          {
+              checkshowed(elems.item(i));
+          }
+      }
+
+      function checkshowed(element)
+      {
+          var top = element.getBoundingClientRect().top;
+          var screen_height = window.screen.height*0.5;
+          if(top<screen_height)
+          {
+              element.classList.add('page_layout_block_after');
+          }      
+          else
+          {
+              element.classList.remove('page_layout_block_after');
+          } 
+      }
+  </script>
+  </head>
+  <body>
+    <div id="match" class="actcolorback">
+      <a href="" class="lightcolorfont regularfont">
+        Free shipping. Simple returns. Holiday shopping has never been easier.
+        Shop now.
+      </a>
+    </div>
+    <header>
+      <a href=""><img src="images/Group.svg" alt="" srcset="" /></a>
+      <div>
+        <a href="" class="lessfont darkcolorfont">Phones</a>
+        <a href="" class="lessfont darkcolorfont">Earbuds</a>
+        <a href="" class="lessfont darkcolorfont">Watches</a>
+        <a href="" class="lessfont darkcolorfont">Smart Home</a>
+        <a href="" class="lessfont darkcolorfont">Laptops</a>
+        <a href="" class="lessfont darkcolorfont">Accessories</a>
+        <a href="" class="lessfont darkcolorfont">Subscriptions</a>
+        <a href="" class="lessfont darkcolorfont">Offers</a>
+      </div>
+      <div>
+        <a href=""><img src="images/Vector (4).svg" alt="" srcset="" /></a>
+        <a href=""><img src="images/Vector (5).svg" alt="" srcset="" /></a>
+        <a href=""><img src="images/Vector (6).svg" alt="" srcset="" /></a>
+        <a href=""><img src="images/Vector (7).svg" alt="" srcset="" /></a>
+      </div>
+    </header>
+    <div class="firstblock">
+      <div class="contentblock">
+        <p class="darkcolorfont hugefont">Inhale. Gift⁠. Exhale.</p>
+        <p class="regularfont darkcolorfont">
+          The gifts you need, stress-free. Shop the best of Google with ease.
+        </p>
+        <div class="firstblockmenu">
+          <button class="buttonbordered bigbutton">Browse deals</button>
+          <button class="buttonbordered bigbutton">
+            Browse the gift guide
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="secondblock">
+      <p class="regularfont darkcolor">Sneak a peek. For you or for them.</p>
+      <div class="productsblock">
+        <div class="products">
+          <div id="productroll" class="productroll">
+            <div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (12).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">
+                  Google Pixel Watch
+                </p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (13).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">Pixel 7 Pro</p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (14).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">Pixel 7</p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <img src="images/IMAGE (15).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">
+                  Pixel Buds Pro
+                </p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (16).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">
+                  Nest Doorbells
+                </p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (17).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">
+                  Nest Wifi Pro
+                </p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (12).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">
+                  Google Pixel Watch
+                </p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (13).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">Pixel 7 Pro</p>
+              </div>
+              <div class="product">
+                <div class="smallrad">
+                  <p class="new"></p>
+                  <img src="images/IMAGE (14).png" alt="" srcset="" />
+                </div>
+                <p class="productname darkcolorfont regularfont">Pixel 7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thirdblock bigrad block">
+      <img src="images/IMAGE (18).png" alt="" />
+      <div class="thirdblockcontent">
+        <p class="biggerfont darkcolor">
+          This holiday season,<br> Google Pixel is giving<br> back.
+        </p>
+        <p class="regularfont darkcolor">
+          We're contributing $1 million to the NBA Foundation to help advance
+          HBCU students in their careers across STEM, sports, and media
+          industries.
+        </p>
+        <a href="" class="actcolorfont regularfont">Learn more</a>
+      </div>
+    </div>
+    <div class="block fourthblock">
+      <div class="bigrad">
+        <p class="darkcolor regularfont">Google Pixel Watch</p>
+        <p class="bigfont darkcolor">Help by Google. Health by Fitbit.</p>
+        <button class="buttonbordered regularfont darkcolor">Learn more</button
+        ><img src="images/IMAGE (19).png" alt="" srcset="" />
+      </div>
+      <div class="bigrad">
+        <p class="darkcolor regularfont">Nest Wifi Pro with Wi-Fi 6E</p>
+        <p class="bigfont darkcolor">The better way to Wi-Fi.</p>
+        <button class="buttonbordered regularfont darkcolor">Learn more</button
+        ><img src="images/IMAGE (20).png" alt="" srcset="" />
+      </div>
+      <div class="bigrad">
+        <p class="darkcolor regularfont">Nest Doorbell (wired)</p>
+        <p class="bigfont darkcolor">Know more.<br />No charging.</p>
+        <button class="buttonbordered regularfont darkcolor">Learn more</button
+        ><img src="images/IMAGE (21).png" alt="" srcset="" />
+      </div>
+      <div class="bigrad">
+        <p class="darkcolor regularfont">Pixel Pass</p>
+        <p class="bigfont darkcolor">One price for<br />all things Pixel.</p>
+        <button class="buttonbordered regularfont darkcolor">Learn more</button
+        ><img src="images/IMAGE (22).png" alt="" srcset="" />
+      </div>
+      <div class="bigrad">
+        <p class="darkcolor regularfont">Switch to Pixel</p>
+        <p class="bigfont darkcolor">
+          Here’s what #TeamPixel has to say about it.
+        </p>
+        <button class="buttonbordered regularfont darkcolor">Learn more</button
+        ><img src="images/IMAGE (23).png" alt="" srcset="" />
+      </div>
+    </div>
+    <div class="fifthblock">
+      <div class="contentblock">
+        <p class="bigfont darkcolor">Shop by category.</p>
+        <div class="categoriesblock">
+          <a href=""
+            ><div class="category">
+              <img src="images/IMAGE (24).png" alt="" srcset="" />
+              <p class="actcolorfont lessfont">Cameras</p>
+            </div></a
+          >
+          <a href=""
+            ><div class="category">
+              <img src="images/IMAGE (25).png" alt="" srcset="" />
+              <p class="actcolorfont lessfont">Doorbells</p>
+            </div></a
+          >
+          <a href=""
+            ><div class="category">
+              <img src="images/IMAGE (26).png" alt="" srcset="" />
+              <p class="actcolorfont lessfont">Streaming</p>
+            </div></a
+          >
+          <a href=""
+            ><div class="category">
+              <img src="images/IMAGE (27).png" alt="" srcset="" />
+              <p class="actcolorfont lessfont">Packages</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="sixthblock block">
+      <div class="bigrad">
+        <p class="regularfont darkcolor">Watches</p>
+        <p class="bigfont darkcolor">Keep moving.<br />Keep improving.</p>
+        <button class="buttonbordered">Explore watches</button>
+        <img src="images/IMAGE (28).png" alt="" srcset="" />
+      </div>
+      <div class="bigrad">
+        <p class="regularfont darkcolor">Earbuds</p>
+        <p class="bigfont darkcolor">Great sound.<br />All around.</p>
+        <button class="buttonbordered">Explore earbuds</button>
+        <img src="images/IMAGE (29).png" alt="" srcset="" />
+      </div>
+    </div>
+    <div class="thirdblock bigrad block">
+      <img src="images/IMAGE (30).png" alt="" />
+      <div class="thirdblockcontent">
+        <p class="biggerfont darkcolor">Putting sustainability to work.</p>
+        <p class="regularfont darkcolor transparent">
+          We’re committed to using recycled or renewable material in all Pixel,
+          Nest, and Fitbit products by 2025.
+        </p>
+        <a href="" class="actcolorfont regularfont">Learn more</a>
+      </div>
+    </div>
+    <div class="eighthblock">
+      <img src="images/IMAGE (31).png" alt="" srcset="" />
+      <p class="bigfont darkcolor">
+        Keep me updated about devices, news,<br />
+        tips, and offers from Google Store.
+      </p>
+      <button class="buttonbordered">Log in and sign up</button>
+      <a href="" class="lessfont actcolorfont">or enter email address</a>
+    </div>
+    <div class="ninethblock">
+      <p class="darkcolor smallfont">
+        Here’s what you will pay for Pixel Pass: You'll be required to finance
+        your Pixel Pass purchase with 0% APR Google Store Financing.​​ The full
+        cost of your Pixel and Preferred Care is spread out over 24 monthly
+        payments. The Google services included in Pixel Pass will be charged to
+        your Google Store Financing account each month. Your Pixel Pass
+        subscription will appear as two separate transactions every month on
+        your Google Store Financing account. From 145/month: 1648.68 at 0% APR
+        with 24 equal monthly payments = 127.03/month plus Pixel Pass services
+        (Google One 200 GB) = 117.97/month for a Total monthly payment =
+        145/month. Adjusted for taxes and shipping.
+      </p>
+    </div>
+    <footer class="block">
+      <div class="footer_nav">
+        <div>
+          <p><a href="">Placing an order </a></p>
+          <p><a href="">Shipping options </a></p>
+          <p><a href="">Tracking a package </a></p>
+          <p><a href="">Country availability </a></p>
+          <p><a href="">Repairs </a></p>
+          <p><a href="">Installation </a></p>
+          <p><a href="">Ideas & Info </a></p>
+        </div>
+        <div>
+          <p><a href="">Help Center </a></p>
+          <p><a href="">Contact Us </a></p>
+          <p><a href="">Financing </a></p>
+          <p><a href="">Device recycling </a></p>
+          <p><a href="">Sustainability </a></p>
+          <p><a href="">Gift returns </a></p>
+          <p><a href="">Refurbished </a></p>
+          <p><a href="">Trade-in </a></p>
+          <p><a href="">Pixel for Business </a></p>
+          <p><a href="">Locations</a></p>
+        </div>
+      </div>
+      <div class="terms">
+       <div>
+        <a href=""><img src="images/Vector (8).svg" alt="" srcset=""></a>
+        <a href=""><img src="images/Group (1).svg" alt="" srcset=""></a>
+        <a href=""><img src="images/Vector (9).svg" alt="" srcset=""></a>
+        <a href=""><img src="images/Group (2).svg" alt="" srcset=""></a>
+        <a href=""><img src="images/Vector (10).svg" alt="" srcset=""></a>
+       </div>
+       <div>
+        <div class="location"><img src="images/IMAGE (32).png" alt="" srcset=""/><p class="smallestfont darkcolor">United States</p></div>
+        <p class="smallestfont darkcolor"><a href="">Privacy</a></p>
+        <p class="smallestfont darkcolor"><a href="">Google Nest Commitment to Privacy</a></p>
+        <p class="smallestfont darkcolor"><a href="">Sales Terms</a></p>
+        <p class="smallestfont darkcolor"><a href="">Terms of Service</a></p>
+        <p class="smallestfont darkcolor"><a href="">Careers</a></p>
+       </ul>
+    </div>
+    </footer>
+    <script>
+      const productroll = document.getElementById("productroll");
+      productroll.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        productroll.scrollLeft += event.deltaY * 3;
+      });
+      check_elements();
+    </script>
+  </body>
+</html>
